@@ -1,24 +1,21 @@
 body {
 	min-height: ;
+	background-image: ;
 }
 .jumbotron {
 	padding-top: 2rem;
 	background-color: #000000;
-	color:white
+	color: white;
 }
-#joblist {
+#profil {
 	background-color: #e1aa10;
 }
 
-#pelanggan {
-	background-color: #060116;
+#join {
+	background-color: #000000;
 	color: #ffffff;
 }
-#plg1 {
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-top: 2%
-}
+
 #kaki {
 	background-color: #000000;
 }
