@@ -19,32 +19,25 @@ $merah: #ae1d0a;
 // styles
 body {
 	font-family: "Montserrat", sans-serif;
-	&::before {
-		content: "";
-		background-image: url(../img/bag.png);
-		background-position: top right;
-		background-repeat: no-repeat;
-		background-size: 55vmax;
-		opacity: 0.7;
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-	}
+	content: "";
+	background-image: url(../img/bag.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 55vmax;
+	opacity: 0.7;
 }
 // navigation-navbar
 .edit-nav {
 	.navbar-brand {
 		img {
-			width: 130px;
+			width: 60px;
 			margin-top: -5px;
 		}
 		span {
 			color: $satu;
 			font-weight: 800;
 			font-size: 1.4rem;
-			margin-left: 0.5em;
+			margin-left: 0.2em;
 		}
 	}
 	#navbarNav {
@@ -96,10 +89,11 @@ body {
 		margin-top: 2em;
 		@include tombol;
 		transition: 0.5s ease;
+		border: transparent;
 
 		&:hover {
 			color: $satu;
-			border: 1px solid $satu;
+			border: 2px solid $satu;
 			background-color: transparent;
 		}
 	}
