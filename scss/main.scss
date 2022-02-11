@@ -40,9 +40,7 @@ body {
 			margin-left: 0.2em;
 		}
 		@media screen and(max-with:922px) {
-			span {
-				font-size: 0.5rem;
-			}
+			span: none;
 		}
 	}
 	#navbarNav {

@@ -22,8 +22,8 @@ body {
 }
 
 @media screen and (max-with: 922px) {
-  .edit-nav .navbar-brand span {
-    font-size: 0.5rem;
+  .edit-nav .navbar-brand {
+    span: none;
   }
 }
 
