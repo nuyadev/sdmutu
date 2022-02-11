@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body::before {
+  content: "";
+  background-image: url(../img/bag.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 55vmax;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.edit-nav .navbar-brand img {
+  width: 130px;
+  margin-top: -5px;
+}
+
+.edit-nav .navbar-brand span {
+  color: #052755;
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-left: 0.5em;
+}
+
+.edit-nav #navbarNav .navbar-nav .nav-item .nav-link {
+  color: #052755;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 1em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.edit-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #63a2f6;
+}
+
+.edit-nav #navbarNav .navbar-nav .nav-item .joinus-button {
+  display: inline-block;
+  color: #dbeffb;
+  background-color: #390977;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+@media screen and (max-with: 922px) {
+  .edit-nav {
+    margin-top: -1em;
+  }
+}
+
+.edit-section {
+  margin-top: 8em;
+}
+
+.edit-section h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #0d72a1;
+  white-space: nowrap;
+  line-height: 0.8;
+}
+
+.edit-section h1 {
+  font-weight: 800;
+  font-size: 5rem;
+  color: #052755;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.edit-section p {
+  color: #052755;
+  font-size: 1.4rem;
+  margin-top: 1em;
+}
+
+.edit-section a {
+  margin-top: 2em;
+  display: inline-block;
+  color: #dbeffb;
+  background-color: #390977;
+  border-radius: 2em;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.edit-section a:hover {
+  color: #052755;
+  border: 1px solid #052755;
+  background-color: transparent;
+}
+/*# sourceMappingURL=main.css.map */

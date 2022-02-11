@@ -1,0 +1,106 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap");
+
+// variables
+$satu: #052755;
+$dua: #24a9e7;
+$tiga: #dbeffb;
+$merah: #ae1d0a;
+
+// mixin
+@mixin tombol {
+	display: inline-block;
+	color: #dbeffb;
+	background-color: #390977;
+	border-radius: 2em;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+// styles
+body {
+	font-family: "Montserrat", sans-serif;
+	&::before {
+		content: "";
+		background-image: url(../img/bag.png);
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 55vmax;
+		opacity: 0.7;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+}
+// navigation-navbar
+.edit-nav {
+	.navbar-brand {
+		img {
+			width: 130px;
+			margin-top: -5px;
+		}
+		span {
+			color: $satu;
+			font-weight: 800;
+			font-size: 1.4rem;
+			margin-left: 0.5em;
+		}
+	}
+	#navbarNav {
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					color: $satu;
+					font-weight: 600;
+					text-transform: uppercase;
+					margin-left: 1em;
+					transition: 0.3s color ease;
+					&:hover {
+						color: lighten($satu, 50%);
+					}
+				}
+				.joinus-button {
+					@include tombol;
+				}
+			}
+		}
+	}
+	@media screen and(max-with:922px) {
+		margin-top: -1em;
+	}
+}
+// edit section
+.edit-section {
+	margin-top: 8em;
+	h2 {
+		font-weight: 700;
+		font-size: 3rem;
+		color: #0d72a1;
+		white-space: nowrap;
+		line-height: 0.8;
+	}
+	h1 {
+		font-weight: 800;
+		font-size: 5rem;
+		color: $satu;
+		line-height: 0.8;
+		text-transform: uppercase;
+	}
+	p {
+		color: $satu;
+		font-size: 1.4rem;
+		margin-top: 1em;
+	}
+	a {
+		margin-top: 2em;
+		@include tombol;
+		transition: 0.5s ease;
+
+		&:hover {
+			color: $satu;
+			border: 1px solid $satu;
+			background-color: transparent;
+		}
+	}
+}
