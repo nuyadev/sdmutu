@@ -25,14 +25,14 @@ body {
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 55vmax;
-		opacity: 0.6;
+		opacity: 0.8;
 		position: absolute;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		right: 0;
 		@media screen and (max-width: 992px) {
-			opacity: 0.3;
+			opacity: 0.5;
 		}
 	}
 }
@@ -128,8 +128,7 @@ body {
 			margin-top: 1em;
 		}
 		h2,
-		h1,
-		p {
+		h1 {
 			text-shadow: 1px 1px 1px rgba(#000000, 0.4);
 		}
 	}
