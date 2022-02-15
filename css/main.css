@@ -1,11 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+body::before {
   content: "";
   background-image: url(../img/bag.png);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 55vmax;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 992px) {
+  body::before {
+    opacity: 0.3;
+  }
 }
 
 .edit-nav .navbar-brand img {
@@ -54,6 +69,10 @@ body {
   }
 }
 
+.sambutan {
+  position: relative;
+}
+
 .edit-section {
   margin-top: 8em;
 }
@@ -88,9 +107,9 @@ body {
   border-radius: 2em;
   padding: 0.5em 2em;
   text-decoration: none;
+  border: 1px solid transparent;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  border: transparent;
 }
 
 .edit-section a:hover {
@@ -114,6 +133,11 @@ body {
   }
   .edit-section a {
     margin-top: 1em;
+  }
+  .edit-section h2,
+  .edit-section h1,
+  .edit-section p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   }
 }
 /*# sourceMappingURL=main.css.map */

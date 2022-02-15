@@ -19,11 +19,22 @@ $merah: #ae1d0a;
 // styles
 body {
 	font-family: "Montserrat", sans-serif;
-	content: "";
-	background-image: url(../img/bag.png);
-	background-position: top right;
-	background-repeat: no-repeat;
-	background-size: 55vmax;
+	&::before {
+		content: "";
+		background-image: url(../img/bag.png);
+		background-position: top right;
+		background-repeat: no-repeat;
+		background-size: 55vmax;
+		opacity: 0.6;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		@media screen and (max-width: 992px) {
+			opacity: 0.3;
+		}
+	}
 }
 // navigation-navbar
 .edit-nav {
@@ -65,6 +76,9 @@ body {
 		margin-top: -1em;
 	}
 }
+.sambutan {
+	position: relative;
+}
 // edit section
 .edit-section {
 	margin-top: 8em;
@@ -90,8 +104,8 @@ body {
 	a {
 		margin-top: 2em;
 		@include tombol;
+		border: 1px solid transparent;
 		transition: 0.5s ease;
-		border: transparent;
 
 		&:hover {
 			color: $satu;
@@ -112,6 +126,11 @@ body {
 		}
 		a {
 			margin-top: 1em;
+		}
+		h2,
+		h1,
+		p {
+			text-shadow: 1px 1px 1px rgba(#000000, 0.4);
 		}
 	}
 }
