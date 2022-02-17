@@ -20,59 +20,64 @@
 	<body>
 		<div class="countainer">
 			<div class="row">
-				<h1>Silahkan isi Data sesuai dengan diri anda !</h1>
-				<div class="col-md-6"></div>
-				<form class="row g-3">
-					<div class="col-md-6">
+				<h1 class="h1ju">Formulir Pendaftaran</h1>
+
+				<form class="row">
+					<div class="col-md-12 mt-3">
+						<label for="nama" class="form-label">Nama Lengkap</label>
+						<input type="text" class="form-control" id="nama" />
+					</div>
+					<div class="col-md-8 mt-3">
 						<label for="namapanggil" class="form-label">Nama Panggilan</label>
 						<input type="text" class="form-control" id="namapanggil" />
 					</div>
-					<div class="col-md-6">
-						<label for="inputPassword4" class="form-label">Password</label>
-						<input type="password" class="form-control" id="inputPassword4" />
-					</div>
-					<div class="col-12">
-						<label for="inputAddress" class="form-label">Address</label>
-						<input
-							type="text"
-							class="form-control"
-							id="inputAddress"
-							placeholder="1234 Main St"
-						/>
-					</div>
-					<div class="col-12">
-						<label for="inputAddress2" class="form-label">Address 2</label>
-						<input
-							type="text"
-							class="form-control"
-							id="inputAddress2"
-							placeholder="Apartment, studio, or floor"
-						/>
-					</div>
-					<div class="col-md-6">
-						<label for="inputCity" class="form-label">City</label>
-						<input type="text" class="form-control" id="inputCity" />
-					</div>
-					<div class="col-md-4">
-						<label for="inputState" class="form-label">State</label>
-						<select id="inputState" class="form-select">
-							<option selected>Choose...</option>
-							<option>...</option>
+					<div class="col-md-4 mt-3">
+						<label for="gender" class="form-label">Jenis Kelamin</label>
+						<select id="gender" class="form-select">
+							<option selected>Laki-Laki</option>
+							<option selected>Perempuan</option>
 						</select>
 					</div>
-					<div class="col-md-2">
-						<label for="inputZip" class="form-label">Zip</label>
-						<input type="text" class="form-control" id="inputZip" />
+					<div class="col-md-4 mt-3">
+						<label for="kotalahir" class="form-label">Kota Kelahiran</label>
+						<select id="kotalahir" class="form-select">
+							<option selected>Gresik</option>
+							<option selected>Lamongan</option>
+							<option selected>Mojokerto</option>
+							<option selected>Surabaya</option>
+						</select>
 					</div>
-					<div class="col-12">
-						<div class="form-check">
-							<input class="form-check-input" type="checkbox" id="gridCheck" />
-							<label class="form-check-label" for="gridCheck">
-								Check me out
-							</label>
-						</div>
+					<div class="col-md-8 mt-3">
+						<label for="tgllahir" class="form-label">Tanggal Lahir</label>
+						<input type="date" class="form-control" id="tgllahir" />
 					</div>
-					<div class="col-12">
+					<div class="col-md-12 mt-3">
+						<label for="alamat" class="form-label">Alamat</label>
+						<textarea class="form-control" id="alamat"></textarea>
+					</div>
+					<div class="col-md-5 mt-3">
+						<label for="kecamatan" class="form-label">Kecamatan</label>
+						<select id="kecamatan" class="form-select">
+							<option selected>Balongpanggang</option>
+							<option selected>Benjeng</option>
+							<option selected>Cerme</option>
+							<option selected>Mantup</option>
+						</select>
+					</div>
+					<div class="col-md-4 mt-3">
+						<label for="kota" class="form-label">Kabupaten/Kota</label>
+						<select id="kota" class="form-select">
+							<option selected>Gresik</option>
+							<option selected>Lamongan</option>
+							<option selected>Mojokerto</option>
+							<option selected>Surabaya</option>
+						</select>
+					</div>
+					<div class="col-md-3 mt-3">
+						<label for="zip" class="form-label">Kode POS</label>
+						<input type="text" class="form-control" id="zip" />
+					</div>
+					<div class="col-12 mt-3">
 						<button type="submit" class="btn btn-primary">Sign in</button>
 					</div>
 				</form>
